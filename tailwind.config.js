@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
   content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html"],
   theme: {
     screens: {
@@ -9,7 +10,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary-color': '#0fa'
+        'primary-color': '#0fa',
+        'secondary-color': '#f0f',
       }
     },
   },
