@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   mode: 'jit',
-  content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html"],
+  content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
     screens: {
       'xs': '361px',
@@ -15,5 +15,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
