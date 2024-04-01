@@ -29,7 +29,7 @@
 
         <!-- Link To Direct to Home Page -->
         <!-- This can be a logo or a simple text (or both). Just write it in-between the anchor tag below-->
-        <a href="#!" class="py-1 flex items-center text-2xl">
+        <a href="../../index.html" class="py-1 flex items-center text-2xl">
             Mirada García
         </a>
 
@@ -54,6 +54,9 @@
         </li>
         <li class="mb-5 sm:mb-0 mx-0">
             <a href="./formulario.html" class="hover:text-gray-300 active">Contratar</a>
+        </li>
+        <li class="mb-5 sm:mb-0 mx-0">
+            <a href="./acerca_de.html" class="hover:text-gray-300">Acerca de</a>
         </li>
 
     </ul>
@@ -161,9 +164,11 @@
 
             <!-- About -->
             <div class="text-center mx-2 mb-5">
-                <h2 class="font-bold text-2xl mb-3 tracking-wider">Mirada<span class="text-secondary-color">García</span>
+                <h2 class="font-bold text-2xl mb-3 tracking-wider">Mirada<span
+                        class="text-secondary-color">García</span>
                 </h2>
-                <p class="pt-1">¡Contáctanos hoy para reservar tu sesión y comenzar a crear recuerdos que perduren toda
+                <p class="pt-1">¡Contáctanos hoy para reservar tu sesión y comenzar a crear recuerdos que perduren
+                    toda
                     la vida!</p>
 
                 <!-- Get Icons From Wherever and use it here -->
@@ -180,14 +185,14 @@
                 </div>
             </div>
 
-            <div class="flex flex-wrap gap-y-8 sm:grid grid-cols-2">
+            <div class="flex flex-wrap gap-y-8 sm:grid grid-cols-1">
                 <!-- Heading -->
                 <div class="mx-10 lg:mx-16">
                     <h2 class="font-bold text-xl mb-4">Nuestra experiencia</h2>
-                    <ul class="flex flex-col items-start gap-y-2 text-left font-semibold text-gray-400">
-                        <li><a href="#!" class="hover:text-secondary-color">Conciertos</a></li>
-                        <li><a href="#!" class="hover:text-secondary-color">Retratos</a></li>
-                        <li><a href="#!" class="hover:text-secondary-color">Matrimonios</a></li>
+                    <ul class="flex flex-col items-start gap-y-2 text-centerfont-semibold text-gray-400">
+                        <li><a href="./portafolio.html#matrimonio" class="hover:text-secondary-color">Matrimonios</a></li>
+                        <li><a href="./portafolio.html#retrato" class="hover:text-secondary-color">Retratos</a></li>
+                        <li><a href="./portafolio.html#concierto" class="hover:text-secondary-color">Conciertos</a></li>
                     </ul>
                 </div>
 
@@ -196,15 +201,16 @@
             <!-- Resources (Delete This if your website does not support newsletter) -->
             <div class="mx-10 lg:mx-16">
                 <h2 class="font-bold text-xl mb-4">Boletín</h2>
-                <p>¡No te pierdas nuestras últimas actualizaciones y noticias! Suscríbete a nuestro boletín para estar
+                <p>¡No te pierdas nuestras últimas actualizaciones y noticias! Suscríbete a nuestro boletín para
+                    estar
                     siempre al tanto.</p>
 
                 <form action="" class="mt-5 flex">
                     <input type="email" name="email"
-                           class="bg-slate-800 outline-0 py-2 px-3 rounded-tl rounded-bl w-full caret-secondary-color"
-                           placeholder="Ingresa tu correo electrónico...">
+                        class="bg-slate-800 outline-0 py-2 px-3 rounded-tl rounded-bl w-full caret-secondary-color"
+                        placeholder="Ingresa tu correo electrónico...">
                     <button type="submit"
-                            class="bg-secondary-color px-2 font-semibold text-slate-900 rounded-tr rounded-br hover:opacity-90">
+                        class="bg-secondary-color px-2 font-semibold text-slate-900 rounded-tr rounded-br hover:opacity-90">
                         Suscribirse
                     </button>
                 </form>
@@ -214,10 +220,10 @@
         </div>
 
 
-        <!-- Sub Footer -->
         <div class="h-1 w-full bg-gradient-to-r from-secondary-color to-green-500 "></div>
         <!-- Copyright -->
-        <p class="text-center mt-8 mb-4 font-semibold">Mirada García - Copyright &copy; <span id="year"></span>. Todos
+        <p class="text-center mt-8 mb-4 font-semibold">Mirada García - Copyright &copy; <span id="year"></span>.
+            Todos
             los derechos reservados.</p>
 
     </footer>
@@ -225,10 +231,14 @@
 </main>
 
 
+
+<script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 <!-- Core Navbar JS-->
-<script src="../../public/js/navbar.js"></script>
+<script src="../js/navbar.js"></script>
 <!-- Core theme JS-->
-<script src="../../public/js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
 </body>
 
 </html>
