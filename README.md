@@ -1,39 +1,35 @@
-# Tailwind Boilerplate
-An unstyled starter template for Tailwind CSS v3.0 with predefined file paths - a great boilerplate for starting a new Tailwind CSS project.
+# Mirada García: Fotografía que Cautiva
 
-### Preview
+Nos complace presentar nuestra propuesta para desarrollar una página web dedicada a ofrecer servicios de fotografía de alta calidad. Esta plataforma central permitirá a los clientes explorar el portafolio del fotógrafo profesional Darío García, aprender sobre los servicios ofrecidos y solicitarlos de manera conveniente a través de un formulario de contacto.
 
-![Preview](https://raw.githubusercontent.com/abrahamebij/images/main/tailwind-boilerplate.webp)
+## Objetivos del Proyecto
 
-### How To Use
+- **Exhibición del Portafolio:** Crear un espacio visualmente atractivo donde los clientes puedan explorar las habilidades y la creatividad del fotógrafo a través de su portafolio de imágenes.
+  
+- **Facilitar la Comunicación:** Proporcionar a los clientes una forma fácil y conveniente de ponerse en contacto con el fotógrafo para solicitar sus servicios o hacer consultas relacionadas.
+  
+- **Promoción de los Servicios:** Destacar los diferentes tipos de servicios de fotografía ofrecidos, desde eventos especiales hasta sesiones de retratos y fotografía de productos, con el objetivo de atraer a una amplia gama de clientes potenciales.
+  
+- **Diseño Moderno y Atractivo:** Desarrollar una página con un diseño moderno y estéticamente agradable utilizando la biblioteca de estilos Tailwind CSS, garantizando una experiencia de usuario agradable y satisfactoria.
 
-Download the zip file [here](https://github.com/abrahamebij/tailwind-boilerplate/archive/master.zip), and extract it or simply just fork it.
+## Funcionalidades Clave
 
- Open up your terminal and run these commands.
-```
- cd '<Project Folder>'
-```
-```
- npm install
-```
-```
- npm run css
-```
+- **Portafolio de Fotografías:** Una sección dedicada para mostrar una selección de las mejores fotografías del fotógrafo, organizadas por categorías como eventos, retratos, paisajes, etc.
+  
+- **Formulario de Contacto:** Integrar un formulario de contacto que permita a los visitantes de la página web enviar consultas o solicitudes de servicios directamente al fotógrafo.
+  
+- **Información de Servicios:** Páginas informativas detalladas sobre los diferentes tipos de servicios de fotografía ofrecidos, incluyendo descripciones, precios y cualquier detalle relevante.
+  
+- **Integración de Redes Sociales:** Enlaces a las cuentas de redes sociales del fotógrafo para que los clientes puedan seguir su trabajo y mantenerse actualizados sobre promociones y noticias.
 
-And you are good to go.
+## Tecnologías Utilizadas
 
-### Features
+- **Frontend:** HTML, CSS, JavaScript con Tailwind CSS para el diseño y la maquetación responsiva.
+  
+- **Backend:** Django.
+  
+- **Herramientas de Desarrollo:** Webstorm, Git para control de versiones.
 
-* Good looking Footer
-* Responsive starter template ready to customize and publish
-* Responsive navbar with hamburger menu
-* Custom Scrollbar for Safari, Chrome and Opera
-* **tailwind.config.js** file included for easy customization
+Este proyecto tiene como objetivo principal brindar una experiencia en línea excepcional para nuestros clientes, destacando la calidad y la creatividad del trabajo de Darío García. Estamos comprometidos a cumplir con los más altos estándares de excelencia y satisfacción del cliente en cada paso del desarrollo de la página web.
 
-### Demo
-
-You can view the live demo at https://abrahamebij.github.io/tailwind-boilerplate/
-
-
-### Error Handling
-If at any point you come across some errors, probably while trying to edit something in the **tailwind.config.js** file, you should head over to your terminal and type `npm run css` again or type `npx tailwindcss -i ./src/input.css -o ./public/css/output.css --minify --watch` depending on your choice.
+Hecho en base a este [template](https://github.com/abrahamebij/tailwind-boilerplate).
