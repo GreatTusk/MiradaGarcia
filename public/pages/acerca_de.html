@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
+    <!-- Core theme TailwindCSS-->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Core theme CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--    Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!-- If you want to change the primary color from green to something else. Change it with the tailwind.config.js in the Project Root Folder -->
+
+<body class="bg-gray-100">
+
+<!-- Responsive navbar-->
+<nav
+        class="flex flex-col sm:flex-row flex-wrap md:items-center px-4 md:px-5 lg:px-16 py-2 justify-between border-b border-gray-600 fixed top-0 z-20 w-full bg-slate-900">
+
+
+    <div class="flex items-center justify-between sm:justify-around gap-x-2 text-white">
+
+        <!-- Link To Direct to Home Page -->
+        <!-- This can be a logo or a simple text (or both). Just write it in-between the anchor tag below-->
+        <a href="../../index.html" class="py-1 flex items-center text-2xl">
+            Mirada García
+        </a>
+
+
+        <!-- Hamburger -->
+        <button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger"
+                aria-label="menu">
+            <div class="w-6 h-1 rounded-lg bg-white bar duration-300"></div>
+            <div class="w-4 h-1 rounded-lg bg-white bar duration-300"></div>
+            <div class="w-6 h-1 rounded-lg bg-white bar duration-300"></div>
+        </button>
+
+    </div>
+
+
+    <ul class="hidden sm:flex text-gray-400 justify-end items-center gap-x-7 gap-y-5 tracking-wide mt-5 sm:mt-0"
+        id="links">
+        <li class="table-caption mb-5 sm:mb-0">
+            <a href="../../index.html">Inicio</a>
+        </li>
+        <li class="table-caption mb-5 sm:mb-0">
+            <a href="./portafolio.html" class="hover:text-gray-300">Portafolio</a>
+        </li>
+        <li class="mb-5 sm:mb-0 mx-0">
+            <a href="./formulario.html" class="hover:text-gray-300">Tienda</a>
+        </li>
+        <li class="mb-5 sm:mb-0 mx-0 active">
+            <a href="./acerca_de.html" class="hover:text-gray-300">Acerca de</a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- Please let this <main></main> tag cover everything in your webpage except the navbar. This enables the navbar links to disappear when the outer parts is clicked. -->
+<!-- If you have a better way of doing this without including the <main> tag. Kindly submit a pull request at https://github.com/abrahamebij/tailwind-boilerplate -->
+<main>
+
+
+    <!-- Page Content -->
+    <section class="text-center py-32 mx-10">
+        <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl pb-7">Capturamos momentos únicos para ti</h1>
+        <p class="text-gray-600 mb-3 lg:mx-16">En Mirada García, entendemos la importancia de los momentos
+            especiales en la vida. Somos más que fotógrafos; somos contadores de historias, capturando emociones y
+            creando recuerdos que perdurarán toda la vida.
+        </p>
+        <p class="text-gray-600 mb-3 lg:mx-16"></p>
+        Nuestra pasión es transformar tus momentos únicos en imágenes que perduren para siempre. Ya sea una
+        boda, una sesión familiar, un evento corporativo o cualquier ocasión especial, nos esforzamos por
+        capturar la esencia de cada momento con un enfoque creativo y profesional.
+        <p class="text-gray-600 mb-3 lg:mx-16"></p>
+        Con años de experiencia y un ojo para el detalle, nos comprometemos a proporcionarte un servicio
+        excepcional y resultados que superen tus expectativas. Cada disparo está lleno de emoción y
+        autenticidad, reflejando la verdadera esencia de quienes son y lo que significa para ellos el momento
+        que están celebrando.
+        <p class="text-gray-600 mb-3 lg:mx-16">
+            En Mirada García, no solo capturamos imágenes; creamos historias visuales que te transportan de vuelta
+            al instante exacto en el que se tomaron. Confía en nosotros para capturar tus recuerdos más preciados y
+            transformarlos en obras de arte que atesorarás para siempre.
+        </p>
+        <p class="text-gray-600 mb-3 lg:mx-16">
+            Déjanos ser parte de tu historia. Déjanos capturar tu mirada.</p>
+        <p class="text-gray-600"></p>
+        <div class="flex justify-center">
+            <div
+                    class="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                <div class="flex items-center justify-between mb-4">
+                    <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Nuestros últimos
+                        clientes</h5>
+                    <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                        Ver todos
+                    </a>
+                </div>
+                <div class="flow-root">
+                    <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                        <li class="py-3 sm:py-4">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="w-8 h-8 rounded-full"
+                                         src="https://media.licdn.com/dms/image/C4E03AQGKwdi8Rk90MQ/profile-displayphoto-shrink_400_400/0/1516159385502?e=2147483647&v=beta&t=SuPWyRwOFR0UUAhuhCjRp16NMdPMj1BkXkA9i9xN6Ow"
+                                         alt="Neil image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4">
+                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Neil Sims
+                                    </p>
+                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div
+                                        class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    $400000
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 sm:py-4">
+                            <div class="flex items-center ">
+                                <div class="flex-shrink-0">
+                                    <img class="w-8 h-8 rounded-full"
+                                         src="https://aaas-iuse.org/wp-content/uploads/2021/05/Bonnie-Green.png"
+                                         alt="Bonnie image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4">
+                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Bonnie Green
+                                    </p>
+                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div
+                                        class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    $1000000
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 sm:py-4">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="w-8 h-8 rounded-full"
+                                         src="https://static.wikia.nocookie.net/tardis/images/1/16/Michael_Gough.jpg"
+                                         alt="Michael image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4">
+                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Michael Gough
+                                    </p>
+                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div
+                                        class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    $100000
+                                </div>
+                            </div>
+                        </li>
+                        <li class="py-3 sm:py-4">
+                            <div class="flex items-center ">
+                                <div class="flex-shrink-0">
+                                    <img class="w-8 h-8 rounded-full"
+                                         src="https://media.licdn.com/dms/image/C4E03AQEG4Ho2Ff6A5Q/profile-displayphoto-shrink_400_400/0/1517060608653?e=2147483647&v=beta&t=5-TIc-9K-bVT64sn-KTLwnQSBn3ddYA2knC2K2E9WQc"
+                                         alt="Lana image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4">
+                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Lana Byrd
+                                    </p>
+                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div
+                                        class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    $500000
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pt-3 pb-0 sm:pt-4">
+                            <div class="flex items-center ">
+                                <div class="flex-shrink-0">
+                                    <img class="w-8 h-8 rounded-full"
+                                         src="https://media.licdn.com/dms/image/C4E03AQGPkAe0c2fKpw/profile-displayphoto-shrink_800_800/0/1648470477692?e=2147483647&v=beta&t=Cf_U7HOXyT_YyAF-J4obgZ1xA7ymN8Ywmn3lt0ZVz1E"
+                                         alt="Thomas image">
+                                </div>
+                                <div class="flex-1 min-w-0 ms-4">
+                                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                                        Thomes Lean
+                                    </p>
+                                    <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                                        email@windster.com
+                                    </p>
+                                </div>
+                                <div
+                                        class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                    $650000
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 pb-3 pt-10 lg:pt-20 text-white">
+
+        <div class="flex flex-wrap justify-around gap-y-16 gap-x-7 mb-16">
+
+            <!-- About -->
+            <div class="text-center mx-2 mb-5">
+                <h2 class="font-bold text-2xl mb-3 tracking-wider">Mirada<span
+                        class="text-secondary-color">García</span>
+                </h2>
+                <p class="pt-1">¡Contáctanos hoy para reservar tu sesión y comenzar a crear recuerdos que perduren
+                    toda
+                    la vida!</p>
+
+                <!-- Get Icons From Wherever and use it here -->
+                <div class="flex flex-wrap gap-x-7 justify-center gap-y-5 mt-5">
+                    <a href="#!" class="text-secondary-color hover:opacity-90">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="#!" class="text-secondary-color hover:opacity-90">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#!" class="text-secondary-color hover:opacity-90">
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-y-8 sm:grid grid-cols-1">
+                <!-- Heading -->
+                <div class="mx-10 lg:mx-16">
+                    <h2 class="font-bold text-xl mb-4">Nuestra experiencia</h2>
+                    <ul class="flex flex-col items-start gap-y-2 text-centerfont-semibold text-gray-400">
+                        <li><a href="./portafolio.html#matrimonio"
+                               class="hover:text-secondary-color">Matrimonios</a></li>
+                        <li><a href="./portafolio.html#retrato" class="hover:text-secondary-color">Retratos</a></li>
+                        <li><a href="./portafolio.html#concierto" class="hover:text-secondary-color">Conciertos</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Resources (Delete This if your website does not support newsletter) -->
+            <div class="mx-10 lg:mx-16">
+                <h2 class="font-bold text-xl mb-4">Boletín</h2>
+                <p>¡No te pierdas nuestras últimas actualizaciones y noticias! Suscríbete a nuestro boletín para
+                    estar
+                    siempre al tanto.</p>
+
+                <form action="" class="mt-5 flex">
+                    <input type="email" name="email"
+                           class="bg-slate-800 outline-0 py-2 px-3 rounded-tl rounded-bl w-full caret-secondary-color"
+                           placeholder="Ingresa tu correo electrónico...">
+                    <button type="submit"
+                            class="bg-secondary-color px-2 font-semibold text-slate-900 rounded-tr rounded-br hover:opacity-90">
+                        Suscribirse
+                    </button>
+                </form>
+            </div>
+            <!-- Resources ends here -->
+
+        </div>
+
+
+        <div class="h-1 w-full bg-gradient-to-r from-secondary-color to-green-500 "></div>
+        <!-- Copyright -->
+        <p class="text-center mt-8 mb-4 font-semibold">Mirada García - Copyright &copy; <span id="year"></span>.
+            Todos
+            los derechos reservados.</p>
+
+    </footer>
+
+
+</main>
+
+
+<script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+<!-- Core Navbar JS-->
+<script src="../js/navbar.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
+</body>
+
+</html>
