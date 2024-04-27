@@ -2,26 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  body::before{
+@layer components {
+  body::before {
     display: block;
-    content: '';
+    content: "";
     height: 56px;
   }
-  button, input, textarea{
-    @apply outline-0
+  button,
+  input,
+  textarea {
+    @apply outline-0;
   }
-  #links .active{
-    @apply text-gray-200
+  #links .active {
+    @apply text-gray-200;
   }
-  ::-webkit-scrollbar-thumb{
-    @apply bg-slate-900
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-900;
   }
-  ::-webkit-scrollbar-thumb{
+  ::-webkit-scrollbar-thumb {
     border-radius: 15px;
     border: 1px solid rgb(75 85 99);
   }
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
   }

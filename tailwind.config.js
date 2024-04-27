@@ -1,19 +1,24 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  mode: 'jit',
-  content: ["**/*.{html, js}", "**/**/*.{html, js}", "./index.html", "./node_modules/flowbite/**/*.js"],
+  mode: "jit",
+  content: [
+    "**/*.{html, js}",
+    "**/**/*.{html, js}",
+    "./index.html",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     screens: {
-      'xs': '361px',
+      xs: "361px",
       ...defaultTheme.screens,
     },
     extend: {
       colors: {
-        'primary-color': "#2d3748",
-        'secondary-color': '#0fa',
-      }
+        "primary-color": "#2d3748",
+        "secondary-color": "#0fa",
+      },
     },
   },
-  plugins: [require('flowbite/plugin')],
-}
+  plugins: [require("flowbite/plugin")],
+};
