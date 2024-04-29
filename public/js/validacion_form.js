@@ -9,9 +9,13 @@ function validarFormulario(event) {
   let fecha_evento = $("#fecha").val();
   let rut = $("#rut").val();
 
-  let mannana = new Date().getDate() + 1;
+  let today = new Date();
+  let tomorrow = new Date(today); 
+  tomorrow.setDate(today.getDate() + 1);
 
-  if (!$("#nombre").val() || !$("#apellido").val() || !$("#fono").val() || !$("#email").val() || !$("#numero_personas").val() || !$("#presupuesto").val() || !$("#fecha").val() || !$("#rut").val()) {
+  if (!$("#nombre").val() || !$("#apellido").val() 
+  || !$("#fono").val() || !$("#email").val() || !$("#numero_personas").val() ||
+  !$("#presupuesto").val() || !$("#fecha").val() || !$("#rut").val()) {
     return;
   }
 
@@ -53,12 +57,13 @@ function validarFormulario(event) {
 
   try {
     let fecha = new Date(fecha_evento);
-    if (fecha < mannana) {
+    if (fecha < tomorrow) {
       alert("La fecha debe ser a partir de mañana.");
       $("#submit-button").prop("disabled", true);
       return;
     }
   } catch (error) {
+    console.log("La fecha no es válida.");
     alert("La fecha no es válida.");
     $("#submit-button").prop("disabled", true);
     return;
