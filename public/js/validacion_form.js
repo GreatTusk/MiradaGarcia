@@ -11,6 +11,10 @@ function validarFormulario(event) {
 
   let mannana = new Date().getDate() + 1;
 
+  if (!$("#nombre").val() || !$("#apellido").val() || !$("#fono").val() || !$("#email").val() || !$("#numero_personas").val() || !$("#presupuesto").val() || !$("#fecha").val() || !$("#rut").val()) {
+    return;
+  }
+
   if (contieneNumber(nombre)) {
     alert("El nombre no puede contener números.");
     $("#submit-button").prop("disabled", true);
