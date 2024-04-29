@@ -69,7 +69,7 @@
 <!-- If you have a better way of doing this without including the <main> tag. Kindly submit a pull request at https://github.com/abrahamebij/tailwind-boilerplate -->
 <main>
 
-    <section class="text-left pt-24 mx-10">
+    <section class="text-center pt-24 mx-10">
         <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl pb-7">Capturando Momentos Inolvidables</h1>
         <p class="text-gray-600">Cada momento de tu vida merece ser recordado con cariño y detalle. Como fotógrafo
             profesional, entiendo la importancia de capturar esos momentos especiales que se convierten en recuerdos
@@ -356,6 +356,16 @@
         </button>
     </div>
 
+    <!-- Sección Mis Inspiraciones -->
+    <section id="inspo" class="text-center py-12 mx-10">
+        <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl pb-7 justify-center">Inspiraciones
+        </h2>
+        <p class="text-gray-600">La magia de una gran fotografía se manifiesta cuando te encuentras en un estado de total libertad. Esa libertad llega cuando te despojas de las reglas, responsabilidades y expectativas, y te sumerges en la experiencia como un niño que descubre el mundo por primera vez.</p>
+    </section>
+    <!-- Cuadro con fotos y descripciones -->
+    <div id="inspiraciones" class=" md:items-center  items-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 "></div>
+
+
 
     <!-- Footer -->
     <footer class="bg-slate-900 pb-3 pt-10 lg:pt-20 text-white">
@@ -438,6 +448,48 @@
 <script src="../js/navbar.js"></script>
 <!-- Core theme JS-->
 <script src="../js/scripts.js"></script>
+<!-- API -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    // Función para cargar las fotos automáticamente al cargar la página
+    function cargarFotos() {
+        let images = [
+            { id: 1, name: "Olivia Arthur", des: "Para mí, parte del poder de la fotografía fija es la ambigüedad de las imágenes, la capacidad de dar una pista sobre una escena o evento sin ser demasiado absoluto.", image: "https://content.magnumphotos.com/wp-content/uploads/2016/04/cortex/par64485-overlay.jpg" },
+            { id: 2, name: "Sergio Larraín", des: "La buena fotografía surge de un estado de gracia. La gracia llega cuando te liberas de las convenciones, las obligaciones, las conveniencias, la competencia y eres libre, como un niño en su primer descubrimiento de la realidad.", image: "https://content.magnumphotos.com/wp-content/uploads/2016/04/cortex/par21393-overlay.jpg" },
+            { id: 3, name: "Bruce Davidson", des: "Si busco una historia, es mi relación con el sujeto: la historia que me cuenta, más que la que yo cuento.", image: "https://content.magnumphotos.com/wp-content/uploads/2016/07/cortex/nyc28265-overlay.jpg" },
+            { id: 4, name: "Moises Saman", des: "Como fotoperiodista, me interesa buscar puntos en común positivos en el espíritu humano, para exponer esos momentos íntimos entre las personas que nos recuerdan la dignidad y la esperanza frente al conflicto.", image: "https://content.magnumphotos.com/wp-content/uploads/2018/06/cortex/par160624-overlay.jpg" }
+
+            // Agrega más imágenes según sea necesario
+        ];
+
+        // Clear previous content
+        $("#inspiraciones").empty();
+
+        // Append cards
+        images.forEach((item) => {
+            let card = `
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="${item.image}" alt="${item.name}" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h1 class="flex text-left items-center text-5xl font-extrabold dark:text-white pb-6">${item.name}</h1>
+                        </a>
+                        <blockquote class="text-6sm text-left italic font-semibold text-gray-900 dark:text-white">
+                            <p>"${item.des}"</p>
+                        </blockquote>
+                    </div>
+                </div>`;
+            $("#inspiraciones").append(card);
+        });
+    }
+
+    $(document).ready(() => {
+        // Llama a la función cargarFotos cuando el documento esté listo
+        cargarFotos();
+    });
+</script>
 </body>
 
 </html>
